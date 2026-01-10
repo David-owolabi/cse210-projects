@@ -31,10 +31,6 @@ class Program
 
         } 
         while (parseNumber != magicNumber);
-
-        
-        
-
         
     }
 }
