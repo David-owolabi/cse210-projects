@@ -3,7 +3,30 @@ using System;
 class Program
 {
     static void Main(string[] args)
+    // Syntax: ClassName variableName = new ClassName();
     {
-        Console.WriteLine("Hello World! This is the Resumes Project.");
+       Job job1 = new Job();
+        job1._jobTitle = "Software Engineer";
+        job1._company = "Microsoft";
+        job1._startYear = "2020";
+        job1._endYear = "2023";
+        
+
+        Job job2 = new Job();
+        job2._jobTitle = "Web Developer";
+        job2._company = "Google";
+        job2._startYear = "2023";
+        job2._endYear = "Present";
+        
+
+        // Creating a Resume and adding jobs to it
+        Resume myResume = new Resume();
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+        myResume._name = "David Owolabi";
+
+        myResume.DisplayResume();
+
     }
+
 }
